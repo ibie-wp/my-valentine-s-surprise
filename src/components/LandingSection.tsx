@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import NextButton from "@/components/NextButton";
 
-const LandingSection = () => {
+interface Props {
+  onNext: () => void;
+}
+
+const LandingSection = ({ onNext }: Props) => {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
       {/* Gradient orbs */}
@@ -27,18 +31,8 @@ const LandingSection = () => {
           to do this for you — because you deserve something that took a little
           thought, even if it's just a little corner of the internet.
         </p>
-      </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 z-10"
-      >
-        <ChevronDown className="mx-auto h-8 w-8 animate-gentle-bounce text-primary/60" />
-        <span className="mt-1 block text-xs tracking-widest text-muted-foreground uppercase">
-          scroll down
-        </span>
+        <NextButton onClick={onNext} label="Let's go 💕" />
       </motion.div>
     </section>
   );

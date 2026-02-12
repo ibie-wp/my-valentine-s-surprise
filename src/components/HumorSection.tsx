@@ -1,17 +1,20 @@
 import { motion } from "framer-motion";
-import { ImageIcon } from "lucide-react";
+import NextButton from "@/components/NextButton";
 
-const HumorSection = () => {
+interface Props {
+  onNext: () => void;
+}
+
+const HumorSection = ({ onNext }: Props) => {
   return (
-    <section className="relative overflow-hidden px-6 py-24">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-0 top-0 h-[300px] w-[300px] rounded-full bg-valentine-peach/30 blur-3xl" />
       </div>
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         className="relative z-10 mx-auto max-w-lg text-center"
       >
@@ -28,13 +31,21 @@ const HumorSection = () => {
           we can make it happen 🎨🍣
         </p>
 
-        {/* GIF placeholder */}
-        <div className="mx-auto flex aspect-video max-w-xs items-center justify-center rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
-          <div className="flex flex-col items-center gap-2 text-muted-foreground">
-            <ImageIcon className="h-8 w-8 text-primary/30" />
-            <span className="text-sm font-medium">[Replace with a funny gif]</span>
-          </div>
-        </div>
+        {/* Cute love GIF */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className="mx-auto mb-6 max-w-xs overflow-hidden rounded-2xl shadow-lg"
+        >
+          <img
+            src="/gifs/cute-love.gif"
+            alt="Cute love gif"
+            className="w-full"
+          />
+        </motion.div>
+
+        <NextButton onClick={onNext} />
       </motion.div>
     </section>
   );

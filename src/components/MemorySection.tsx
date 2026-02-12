@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import { ImageIcon } from "lucide-react";
+import NextButton from "@/components/NextButton";
+
+interface Props {
+  onNext: () => void;
+}
 
 const memories = [
   {
@@ -33,14 +38,13 @@ const fadeUp = {
   }),
 };
 
-const MemorySection = () => {
+const MemorySection = ({ onNext }: Props) => {
   return (
     <section className="relative px-6 py-24">
       <div className="mx-auto max-w-2xl">
         <motion.h2
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1 }}
           className="mb-16 text-center text-3xl font-bold text-primary sm:text-4xl"
         >
           Us, in snapshots 📸
@@ -52,8 +56,7 @@ const MemorySection = () => {
               key={i}
               custom={i}
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-50px" }}
+              animate="visible"
               variants={fadeUp}
               className={`flex flex-col items-center gap-4 ${
                 i % 2 === 1 ? "sm:flex-row-reverse" : "sm:flex-row"
@@ -74,6 +77,8 @@ const MemorySection = () => {
             </motion.div>
           ))}
         </div>
+
+        <NextButton onClick={onNext} />
       </div>
     </section>
   );
