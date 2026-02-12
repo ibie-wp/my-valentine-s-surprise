@@ -17,14 +17,15 @@ const LandingSection = () => {
         className="relative z-10"
       >
         <p className="mb-3 text-lg tracking-widest text-muted-foreground uppercase">
-          this is for you
+          this is for you, Bash
         </p>
         <h1 className="mb-6 text-6xl font-bold tracking-tight text-primary sm:text-8xl">
-          Hey, Beautiful 💕
+          Basheerah 💕
         </h1>
         <p className="mx-auto max-w-md text-lg leading-relaxed text-muted-foreground sm:text-xl">
           I know timing's weird and we don't always get alone time, but I wanted
-          to do this for you.
+          to do this for you — because you deserve something that took a little
+          thought, even if it's just a little corner of the internet.
         </p>
       </motion.div>
 

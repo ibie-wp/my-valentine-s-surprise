@@ -38,14 +38,14 @@ const CelebrationScreen = () => {
       >
         <p className="mb-6 text-6xl">🥳💕</p>
         <h2 className="mb-6 text-4xl font-bold text-primary sm:text-5xl">
-          I knew you'd say yes!
+          I knew you'd say yes, Bash!
         </h2>
         <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
           The picnic + painting date is ready whenever we get the chance — no
           rush, no stress 💛
         </p>
         <p className="mb-10 text-lg leading-relaxed text-foreground">
-          I choose you. Every single day. Happy Valentine's Day, my love. 🤍
+          I choose you, Basheerah. Every single day. Happy Valentine's Day, my love. 🤍
         </p>
 
         {/* Final image placeholder */}
