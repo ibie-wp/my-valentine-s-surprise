@@ -15,7 +15,7 @@ const AcknowledgmentSection = ({ onNext }: Props) => {
         className="mx-auto max-w-md border-l-4 border-primary/30 py-4 pl-6"
       >
         <p className="text-lg italic leading-relaxed text-foreground/80 sm:text-xl">
-          "Even when I get a little upset, it's only because I care so much — I
+          "Even when I get a little upset, it's only because I care so much, I
           always come back to choosing you."
         </p>
       </motion.div>

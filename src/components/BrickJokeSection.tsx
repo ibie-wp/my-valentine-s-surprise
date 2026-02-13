@@ -23,7 +23,7 @@ const BrickJokeSection = ({ onNext }: Props) => {
           Before we start…
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-          Remember how you got hit by a brick to the head? Yeah…
+          Remember how you got hit by a brick to the kop? Yah nay…
         </p>
 
         {/* Brick throw GIF */}
@@ -34,7 +34,7 @@ const BrickJokeSection = ({ onNext }: Props) => {
           className="mx-auto mb-6 max-w-xs overflow-hidden rounded-2xl shadow-lg"
         >
           <img
-            src="/gifs/brick-throw.gif"
+            src="/gifs/123.gif"
             alt="Brick being thrown"
             className="w-full"
           />
@@ -46,7 +46,7 @@ const BrickJokeSection = ({ onNext }: Props) => {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-lg font-medium text-primary"
         >
-          Get it?? 😂🧱💕
+          Vang?? 😂🧱💕
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const BrickJokeSection = ({ onNext }: Props) => {
           transition={{ delay: 1, duration: 0.6 }}
           className="mt-2 text-base text-muted-foreground"
         >
-          That brick really said "go fall in love" huh 😏
+          That brick really said "go fall in love" nuh 😏
         </motion.p>
 
         <NextButton onClick={onNext} label="Okay okay, next" />

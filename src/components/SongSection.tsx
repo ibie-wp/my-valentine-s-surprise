@@ -33,28 +33,29 @@ const SongSection = ({ onNext }: Props) => {
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
           There's so many songs, Bash… but every time this one comes on, I just
-          think of you. I don't even know how to explain it — it just feels like
-          us. 💛
+          think of you. I don't even know how to explain it, it just feels like
+          us despite the meaning behind it. 💛
         </p>
 
-        {/* Song embed placeholder — replace the URL with your actual song */}
+        {/* Song embed */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="mx-auto mb-8 max-w-md overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-lg"
+          className="mx-auto mb-8 w-full max-w-md"
         >
-          {/* Replace this Spotify embed with your song's embed URL */}
-          <iframe
-            style={{ borderRadius: "12px" }}
-            src="https://open.spotify.com/embed/track/3d9DChrdc6BOeFsbrZ3Is0?utm_source=generator&theme=0"
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            title="Song that reminds me of you"
-          />
+          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg">
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/track/6DH13QYXK7lKkYHSU88N48?utm_source=generator"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Song that reminds me of you"
+            />
+          </div>
         </motion.div>
 
         <motion.p
@@ -63,7 +64,7 @@ const SongSection = ({ onNext }: Props) => {
           transition={{ delay: 0.8, duration: 0.6 }}
           className="text-base italic text-muted-foreground"
         >
-          Press play. Close your eyes. Think of us. 🤍
+          Press play. Close your eyes. Dont it make you think of us? 🤍
         </motion.p>
 
         {/* Cute GIF */}

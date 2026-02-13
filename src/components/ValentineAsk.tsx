@@ -14,12 +14,12 @@ interface Props {
 }
 
 const noStages = [
-  { msg: "Oh no… are you mad at me, Bash? 😅", sub: "Come on, try again…", btn: "No, I mean it" },
-  { msg: "Wait — what did I do?? 😰", sub: "Think about it… picnic? Painting? 🎨", btn: "Still no" },
-  { msg: "Bash… you're really doing this to me? 😭", sub: "My heart is literally shrinking right now", btn: "Yep, still no" },
-  { msg: "Okay I'm crying. Are you happy? 😂😭", sub: "The painting date is OFF the table if you keep this up", btn: "I don't care 😤" },
-  { msg: "Oh so you hate my soul?? 💀", sub: "This is my villain origin story, Bash", btn: "Maybe a little" },
-  { msg: "I'm going to ask one more time…", sub: "And the No button might just… disappear 👀", btn: "Try me" },
+  { msg: "Oh nooooo… oh you mad at me? 😅", sub: "Come on, try again…", btn: "No, I mean it" },
+  { msg: "Owww nyyy — what did I do?? 😰", sub: "Think about it… nice date huh?? ", btn: "Still no" },
+  { msg: "Bash… are you kak serious mb 😭", sub: "Miniete mahn", btn: "Yep, still no" },
+  { msg: "Oh so you hate. Are you happy now? 😂😭", sub: "The date is OFF the table if you keep this up", btn: "I don't care 😤" },
+  { msg: "Oh so you hate my soul and want me to die?? 💀", sub: "This is my villain origin story, Bash", btn: "Maybe a little" },
+  { msg: "I'm going to ask one more time missy…", sub: "And then you see what i do 👀", btn: "Try me" },
 ];
 
 const ValentineAsk = ({ onYes }: Props) => {
@@ -112,7 +112,7 @@ const ValentineAsk = ({ onYes }: Props) => {
               animate={{ opacity: 1 }}
               className="mt-6 text-sm text-muted-foreground"
             >
-              Looks like "No" isn't an option anymore, Bash 😏💕
+              oh nooo "No" isn't an option anymore, whela 😏💕
             </motion.p>
           )}
         </motion.div>
@@ -135,7 +135,7 @@ const ValentineAsk = ({ onYes }: Props) => {
               }}
               className="w-full rounded-full px-8"
             >
-              Okay fine… Yes 💗
+              Okay fine… Yes my love 💗
             </Button>
             {!noButtonGone && (
               <Button

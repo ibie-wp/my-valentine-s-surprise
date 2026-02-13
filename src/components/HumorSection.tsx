@@ -20,14 +20,14 @@ const HumorSection = ({ onNext }: Props) => {
       >
         <p className="mb-6 text-4xl">😅</p>
         <h2 className="mb-6 text-2xl font-bold text-foreground sm:text-3xl">
-          Okay, real talk for a sec…
+          Okay, so like real talk gou…
         </h2>
         <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-          I can't give you the world this weekend… but I can give you this
+          I can't give you the world this weekend… yk mos its the car and stuff, but I can give you this
           little site 😉
         </p>
         <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-          Don't worry — I already have a picnic + painting date ready for when
+          But now Don't stress, I already have a date planned already for when
           we can make it happen 🎨🍣
         </p>
 

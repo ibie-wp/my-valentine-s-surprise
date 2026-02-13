@@ -38,22 +38,21 @@ const CelebrationScreen = () => {
       >
         <p className="mb-6 text-6xl">🥳💕</p>
         <h2 className="mb-6 text-4xl font-bold text-primary sm:text-5xl">
-          I knew you'd say yes, Bash!
+          hoppa I knew you'd say yes mahn
         </h2>
         <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-          The picnic + painting date is ready whenever we get the chance — no
-          rush, no stress 💛
+          The date is ready whenever we get the chance so no
+          rush, no stress luv💛
         </p>
         <p className="mb-10 text-lg leading-relaxed text-foreground">
-          I choose you, Basheerah. Every single day. Happy Valentine's Day, my love. 🤍
+          I choose you, Basheerah. Not just this once, Every single day. Happy Valentine's Day my love. 🤍
         </p>
 
         {/* Final image placeholder */}
         <div className="mx-auto flex aspect-square max-w-xs items-center justify-center rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
           <div className="flex flex-col items-center gap-2 text-muted-foreground">
-            <ImageIcon className="h-10 w-10 text-primary/30" />
             <span className="text-sm font-medium">
-              [Replace with a cute photo of you two]
+              <img src="assets/last pic.jpg" alt="" />
             </span>
           </div>
         </div>

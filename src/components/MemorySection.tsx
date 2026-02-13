@@ -8,24 +8,24 @@ interface Props {
 
 const memories = [
   {
-    caption: "Remember this day? We laughed so hard 😄",
-    label: "Replace with photo #1",
+    caption: "Remember this day? We laughed us stukken 😄",
+    image: "/assets/laughing.jpg",
   },
   {
-    caption: "Our first mini-adventure together 🛶",
-    label: "Replace with photo #2",
+    caption: "Our first mini-adventure tg on a random ass week day 🛶",
+    image: "/assets/mini adv.jpg",
   },
   {
     caption: "One of my favorite memories with you ❤️",
-    label: "Replace with photo #3",
+    image: "/assets/fav mem.jpg",
   },
   {
     caption: "You probably don't know I screenshotted this 😏",
-    label: "Replace with photo #4",
+    image: "/assets/ss.PNG",
   },
   {
     caption: "This one just makes me smile every time 🥰",
-    label: "Replace with photo #5",
+    image: "/assets/smile.jpg",
   },
 ];
 
@@ -41,7 +41,7 @@ const fadeUp = {
 const MemorySection = ({ onNext }: Props) => {
   return (
     <section className="relative px-6 py-24">
-      <div className="mx-auto max-w-2xl">
+      <div className="mx-auto max-w-4xl">
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -50,7 +50,7 @@ const MemorySection = ({ onNext }: Props) => {
           Us, in snapshots 📸
         </motion.h2>
 
-        <div className="space-y-16">
+        <div className="space-y-12 sm:space-y-16">
           {memories.map((m, i) => (
             <motion.div
               key={i}
@@ -58,22 +58,29 @@ const MemorySection = ({ onNext }: Props) => {
               initial="hidden"
               animate="visible"
               variants={fadeUp}
-              className={`flex flex-col items-center gap-4 ${
+              className={`flex flex-col items-center gap-6 sm:gap-8 ${
                 i % 2 === 1 ? "sm:flex-row-reverse" : "sm:flex-row"
               }`}
             >
-              {/* Placeholder */}
-              <div className="flex aspect-[4/3] w-full max-w-sm items-center justify-center rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
-                <div className="flex flex-col items-center gap-2 text-muted-foreground">
-                  <ImageIcon className="h-10 w-10 text-primary/30" />
-                  <span className="text-sm font-medium">[{m.label}]</span>
+              {/* Image Container */}
+              <div className="w-full sm:w-1/2 flex-shrink-0">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
+                  <div className="absolute inset-0 flex items-center justify-center p-4">
+                    <img 
+                      src={m.image} 
+                      alt="" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
               </div>
 
               {/* Caption */}
-              <p className="max-w-xs text-center text-lg leading-relaxed text-foreground sm:text-left">
-                {m.caption}
-              </p>
+              <div className="w-full sm:w-1/2 flex-shrink-0">
+                <p className="text-center sm:text-left text-lg leading-relaxed text-foreground px-4 sm:px-0">
+                  {m.caption}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
