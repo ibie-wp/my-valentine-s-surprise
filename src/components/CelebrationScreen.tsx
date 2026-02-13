@@ -49,12 +49,12 @@ const CelebrationScreen = () => {
         </p>
 
         {/* Final image placeholder */}
-        <div className="mx-auto flex aspect-square max-w-xs items-center justify-center rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
-          <div className="flex flex-col items-center gap-2 text-muted-foreground">
-            <span className="text-sm font-medium">
-              <img src="assets/last pic.jpg" alt="" />
-            </span>
-          </div>
+        <div className="mx-auto flex aspect-square w-full max-w-xs items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/20 bg-valentine-blush/40">
+          <img 
+            src="assets/last pic.jpg" 
+            alt="Valentine's celebration" 
+            className="h-full w-full object-cover"
+          />
         </div>
       </motion.div>
     </section>
